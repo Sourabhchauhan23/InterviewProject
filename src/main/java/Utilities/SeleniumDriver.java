@@ -17,9 +17,6 @@ public class SeleniumDriver {
     private static WebDriver driver;
     private static WebDriverWait wait;
 
-//    public static ExcelReader excel = new ExcelReader(
-//            System.getProperty("user.dir") + "\\src\\test\\resources\\TestData\\TestData.xlsx");
-
     SeleniumDriver(){
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -69,7 +66,7 @@ public class SeleniumDriver {
         wait.until(ExpectedConditions.visibilityOf(webElement));
         System.out.println("Element is visible now");
         try{
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         }catch (Exception e){
             e.printStackTrace();
         }

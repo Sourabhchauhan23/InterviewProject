@@ -1,4 +1,4 @@
-#Test Ccompose functionality of Gmail
+#Test Compose functionality of Gmail
 
   Feature: Compose Email
     Background:
