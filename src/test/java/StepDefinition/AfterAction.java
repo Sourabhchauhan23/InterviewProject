@@ -21,7 +21,7 @@ public class AfterAction {
         System.out.println(scenario.isFailed());
         if (scenario.isFailed()) {
             try {
-                File screenshot =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+                File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
                 FileUtils.copyFile(screenshot, new File("C:\\Users\\Sourabh\\IdeaProjects\\Interview\\src\\test\\resources\\Screenshots"));
             } catch (IOException e) {
                 throw new RuntimeException(e);
