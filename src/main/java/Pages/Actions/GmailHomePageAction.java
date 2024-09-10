@@ -57,8 +57,7 @@ public class GmailHomePageAction {
     public void addSubject(String emailSubject){
         Actions actions = new Actions(getDriver());
         customWait(emailSubjectInputField,5);
-        actions.moveToElement(emailSubjectInputField).click().sendKeys(emailSubject);
-        actions.keyDown(Keys.ENTER).build().perform();
+        actions.moveToElement(emailSubjectInputField).click().sendKeys(emailSubject).build().perform();
     }
 
     public void addBody(String emailBody){
